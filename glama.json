@@ -1,0 +1,58 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/1.0.0/server.json",
+  "name": "afya-ya-akili-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Kenya mental health resources \u2014 therapist finder, crisis lines, teletherapy, workplace wellness, stigma reduction. 5 tools. 1st world equivalent: BetterHelp / Mind UK.",
+  "license": "MIT",
+  "author": {
+    "name": "Gabriel Mahia",
+    "email": "contact@aikungfu.dev"
+  },
+  "tools": [
+    {
+      "name": "mental_health_provider_finder",
+      "description": "Find licensed mental health practitioners in Kenya",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true
+      }
+    },
+    {
+      "name": "crisis_line_directory",
+      "description": "Kenya mental health crisis lines and emergency resources",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true
+      }
+    },
+    {
+      "name": "mental_health_rights",
+      "description": "Mental health rights under Kenya Mental Health Act 2022",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true
+      }
+    },
+    {
+      "name": "workplace_wellness_guide",
+      "description": "Kenya workplace mental health policies and EAP programs",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true
+      }
+    },
+    {
+      "name": "self_help_resources",
+      "description": "Kenya mental health self-help resources and support groups",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true
+      }
+    }
+  ]
+}
