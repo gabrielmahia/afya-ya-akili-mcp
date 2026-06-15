@@ -2,7 +2,7 @@
 from __future__ import annotations
 from typing import Optional
 from fastmcp import FastMCP
-mcp = FastMCP(name="afya-ya-akili-mcp", description="Kenya mental health resources. DEMO data only. If in crisis: Befrienders Kenya 0800 723 253.")
+mcp = FastMCP(name="afya-ya-akili-mcp", instructions="Kenya mental health resources. DEMO data only. If in crisis: Befrienders Kenya 0800 723 253.")
 
 @mcp.tool(name="mental_health_provider_finder", description="Find licensed mental health practitioners in Kenya by county. DEMO.")
 def mental_health_provider_finder(county: Optional[str] = None, provider_type: Optional[str] = None) -> dict:
