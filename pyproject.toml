@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "afya-ya-akili-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "MCP server for Kenya mental health resources — therapist finder, crisis lines, t"
 readme = "README.md"
 license = { text = "MIT" }
