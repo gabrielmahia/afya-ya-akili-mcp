@@ -1,5 +1,8 @@
 # afya-ya-akili-mcp
 
+[![afya-ya-akili-mcp Glama score](https://glama.ai/mcp/servers/gabrielmahia/afya-ya-akili-mcp/badges/score.svg)](https://glama.ai/mcp/servers/gabrielmahia/afya-ya-akili-mcp)
+
+
 > Kenya mental health via MCP — therapist finder, crisis lines, rights, workplace wellness
 
 [![PyPI](https://img.shields.io/badge/PyPI-v0.1.0-blue)](https://github.com/gabrielmahia/afya-ya-akili-mcp)
