@@ -4,6 +4,14 @@
 [![smithery badge](https://smithery.ai/badge/@gabrielmahia/afya-ya-akili-mcp)](https://smithery.ai/server/@gabrielmahia/afya-ya-akili-mcp)
 
 
+---
+**Compatible with `claude-sonnet-5`** (released 2026-06-30) — Anthropic's most agentic
+Sonnet yet. Runs multi-step tool chains end-to-end without stopping short.
+Install: `pip install afya-ya-akili-mcp` · Use with any MCP client.
+
+---
+
+
 > Kenya mental health via MCP — therapist finder, crisis lines, rights, workplace wellness
 
 [![PyPI](https://img.shields.io/badge/PyPI-v0.1.0-blue)](https://github.com/gabrielmahia/afya-ya-akili-mcp)
