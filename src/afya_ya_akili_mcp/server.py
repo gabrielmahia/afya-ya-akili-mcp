@@ -104,3 +104,7 @@ def self_help_resources(area: Optional[str] = None) -> dict:
                           "Limit social media consumption during stressful periods",
                           "Mindfulness: Headspace/Calm apps available free tier"],
             "when_to_seek_help": "Seek professional help if symptoms persist 2+ weeks or significantly affect daily functioning."}
+
+def main() -> None:
+    """Console entry point."""
+    mcp.run()
