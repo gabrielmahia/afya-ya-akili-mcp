@@ -12,13 +12,13 @@ def mental_health_provider_finder(county: Optional[str] = None, provider_type: O
              "psychotherapist":"Longer-term talk therapy. Various modalities (CBT, psychodynamic)."}
     RESOURCES = [
         {"name": "Mathare Hospital", "type": "public_hospital", "county": "Nairobi",
-         "note": "Kenya's main public psychiatric hospital. NHIF accredited.", "contact": "020-2001000"},
+         "note": "Kenya's main public psychiatric hospital. SHA accreditation status UNVERIFIED.", "contact": "020-2001000"},
         {"name": "Chiromo Lane Medical Centre", "type": "private_clinic", "county": "Nairobi",
          "note": "Comprehensive psychiatric care. Private.", "contact": "020-2014469"},
         {"name": "Befrienders Kenya", "type": "crisis_support", "county": "Nairobi",
          "note": "Emotional support for distress/suicidal thoughts. Free. Confidential.", "contact": "0800 723 253"},
         {"name": "Aga Khan University Hospital — Psychiatry", "type": "private_hospital", "county": "Nairobi",
-         "note": "Outpatient and inpatient psychiatry. NHIF for some cases.", "contact": "020-3662000"},
+         "note": "Outpatient and inpatient psychiatry. SHA cover for some cases (UNVERIFIED).", "contact": "020-3662000"},
         {"name": "USIU-Africa Counselling Centre", "type": "training_clinic", "county": "Nairobi",
          "note": "Affordable counselling by supervised trainees.", "contact": "020-3606000"},
     ]
@@ -29,7 +29,7 @@ def mental_health_provider_finder(county: Optional[str] = None, provider_type: O
     return {"source": "DEMO — Kenya Psychiatric Association, KCA", "county": county,
             "resources": RESOURCES, "kpa": "Kenya Psychiatric Association: psychiatry.or.ke",
             "kca": "Kenya Counsellors Association: kcaglobal.com",
-            "nhif": "NHIF covers inpatient psychiatric care at accredited facilities"}
+            "nhif": "Inpatient psychiatric care may be covered through SHA (which replaced NHIF in Oct 2024); scope UNVERIFIED, check sha.go.ke"}
 
 @mcp.tool(name="crisis_line_directory", description="Kenya mental health crisis lines and emergency resources. DEMO.")
 def crisis_line_directory() -> dict:
