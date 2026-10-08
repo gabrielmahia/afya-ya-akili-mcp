@@ -32,7 +32,7 @@ pip install afya-ya-akili-mcp
 | Tool | Description |
 |------|-------------|
 | `mental_health_provider_finder` | Licensed mental health practitioners by county |
-| `crisis_line_directory` | Kenya crisis lines — Befrienders Kenya 0800 723 253 |
+| `crisis_line_directory` | Kenya emergency and crisis lines compiled from public listings (2026-10-07): Befrienders Kenya +254 722 178 177 (Mon-Fri 9am-5pm), Kenya Red Cross 1199, 999/112; each entry says how many listings confirm it |
 | `mental_health_rights` | Rights under Kenya Mental Health Act 2022 |
 | `workplace_wellness_guide` | EAP programs, occupational stress, OSHA |
 | `self_help_resources` | Online resources, support groups, self-care |

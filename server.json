@@ -6,12 +6,12 @@
     "url": "https://github.com/gabrielmahia/afya-ya-akili-mcp",
     "source": "github"
   },
-  "version": "0.1.4",
+  "version": "0.1.5",
   "packages": [
     {
       "registryType": "pypi",
       "identifier": "afya-ya-akili-mcp",
-      "version": "0.1.4",
+      "version": "0.1.5",
       "transport": {
         "type": "stdio"
       }
