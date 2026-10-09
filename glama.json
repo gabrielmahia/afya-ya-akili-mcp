@@ -1,7 +1,7 @@
 {
   "$schema": "https://glama.ai/mcp/schemas/1.0.0/server.json",
   "name": "afya-ya-akili-mcp",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "MCP server for Kenya mental health resources — therapist finder, crisis lines, t",
   "license": "MIT",
   "author": {
@@ -20,7 +20,7 @@
     },
     {
       "name": "crisis_line_directory",
-      "description": "Kenya mental health crisis lines and emergency resources. DEMO.",
+      "description": "Kenya emergency and mental health crisis lines, compiled from public listings on 2026-10-07: number, hours, channels, and how many independent listings confirm each. Numbers change: confirm before relying. Not a substitute for emergency services.",
       "annotations": {
         "readOnlyHint": true,
         "destructiveHint": false,
