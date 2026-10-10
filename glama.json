@@ -1,8 +1,8 @@
 {
   "$schema": "https://glama.ai/mcp/schemas/1.0.0/server.json",
   "name": "afya-ya-akili-mcp",
-  "version": "0.1.5",
-  "description": "MCP server for Kenya mental health resources — therapist finder, crisis lines, t",
+  "version": "0.1.6",
+  "description": "Kenya mental health resources: provider finder, crisis lines from sourced listings, rights, workplace wellness, self-help",
   "license": "MIT",
   "author": {
     "name": "Gabriel Mahia",
