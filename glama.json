@@ -11,7 +11,7 @@
   "tools": [
     {
       "name": "mental_health_provider_finder",
-      "description": "Find licensed mental health practitioners in Kenya by county. DEMO.",
+      "description": "Find sample mental health providers and services in Kenya by county and facility type, with a guide to what each kind of professional does (psychiatrist, psychologist, counsellor, psychotherapist). Use when someone asks where to get professional help. county filters by matching text; an unmatched county returns an empty list with a note. provider_type filters by FACILITY type (public_hospital, private_clinic, private_hospital, crisis_support or training_clinic); the professional titles in the guide are explanations, not filter values. If provider_type matches nothing, ALL providers are returned and provider_type_matched is false. Returns the source label, the resources with type, county, note and contact, the guide, KPA and KCA pointers and an SHA note. A short hand-compiled sample: phone numbers other than Befrienders Kenya's are NOT verified, so confirm before use. For someone in crisis use crisis_line_directory first. Read-only; no side effects.",
       "annotations": {
         "readOnlyHint": true,
         "destructiveHint": false,
@@ -20,7 +20,7 @@
     },
     {
       "name": "crisis_line_directory",
-      "description": "Kenya emergency and mental health crisis lines, compiled from public listings on 2026-10-07: number, hours, channels, and how many independent listings confirm each. Numbers change: confirm before relying. Not a substitute for emergency services.",
+      "description": "Kenya emergency and mental health crisis lines compiled from public listings on 2026-10-07. Use when someone is in distress, mentions self-harm or suicidal thoughts, or asks for a helpline. If life is at risk, tell them first to call 999 or 112 or go to the nearest hospital emergency department, then offer this list. Takes no arguments. Returns the emergency numbers, then each line's number, hours, channels and cost, how many independent listings confirm it (a low count means unconfirmed), and the numbers removed because they could not be verified. Befrienders Kenya is NOT 24/7 (weekday daytime hours per its own listing). Numbers and hours change: confirm before relying. Not a substitute for emergency services or professional care. Read-only; no side effects.",
       "annotations": {
         "readOnlyHint": true,
         "destructiveHint": false,
@@ -29,7 +29,7 @@
     },
     {
       "name": "mental_health_rights",
-      "description": "Mental health rights under Kenya Mental Health Act 2022. DEMO.",
+      "description": "Summarise patient rights under Kenya's Mental Health Act (Cap 248, amended in 2022): consent, confidentiality, voluntary treatment, dignity, challenging involuntary admission, community care, discrimination and insurance. Use when someone asks what rights they or a relative have in treatment. Keywords in topic select entries; if none match, ALL rights are returned. Returns the source label, topic, the rights, a disclaimer and the regulators. A summary labelled DEMO and partly unverified: the appeal, discrimination and insurance entries say what is not confirmed. Not legal advice: read the Act on kenyalaw.org or ask a lawyer. Read-only; no side effects.",
       "annotations": {
         "readOnlyHint": true,
         "destructiveHint": false,
@@ -38,7 +38,7 @@
     },
     {
       "name": "workplace_wellness_guide",
-      "description": "Kenya workplace mental health policies and EAP programs. DEMO.",
+      "description": "Guidance for employers and employees on mental health at work in Kenya: the employer's duty of care, employee assistance programmes, stress and sick leave, burnout, policies and reducing stigma. Use when someone asks what an employer should or must do. Keywords in query select entries; if none match, ALL guidance is returned. Returns the source label, the matching guidance and a DOSHS pointer. A summary labelled DEMO: programme costs and leave rules are indicative, so confirm with DOSHS and the Employment Act. Read-only; no side effects.",
       "annotations": {
         "readOnlyHint": true,
         "destructiveHint": false,
@@ -47,7 +47,7 @@
     },
     {
       "name": "self_help_resources",
-      "description": "Kenya mental health self-help resources and support groups. DEMO.",
+      "description": "Kenyan mental health self-help resources: online sources, support groups and self-care ideas, with when to seek professional help. Use when someone wants peer support or self-care options rather than a clinic. area is only echoed back; the same list is returned for everyone. Returns the source label, online resources, support groups, self-care suggestions and a when-to-seek-help note. A short list labelled DEMO and not an endorsement: self-help does not replace professional care, and for a crisis use crisis_line_directory. Read-only; no side effects.",
       "annotations": {
         "readOnlyHint": true,
         "destructiveHint": false,
