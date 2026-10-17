@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "afya-ya-akili-mcp"
-version = "0.1.7"
+version = "0.1.8"
 description = "Kenya mental health resources: provider finder, crisis lines from sourced listings, rights, workplace wellness, self-help"
 readme = "README.md"
 license = { text = "MIT" }

@@ -1,17 +1,17 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
   "name": "io.github.gabrielmahia/afya-ya-akili-mcp",
-  "description": "MCP server for mental-health support coordination in East Africa (afya ya akili = mental health)",
+  "description": "Kenya mental health resources: sourced crisis lines, provider sample, rights, workplace wellness.",
   "repository": {
     "url": "https://github.com/gabrielmahia/afya-ya-akili-mcp",
     "source": "github"
   },
-  "version": "0.1.7",
+  "version": "0.1.8",
   "packages": [
     {
       "registryType": "pypi",
       "identifier": "afya-ya-akili-mcp",
-      "version": "0.1.7",
+      "version": "0.1.8",
       "transport": {
         "type": "stdio"
       }
