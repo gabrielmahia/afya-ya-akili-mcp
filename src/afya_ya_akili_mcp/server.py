@@ -1,6 +1,8 @@
 """AfyaYaAkiliMCP — Kenya Mental Health Resources (5 tools). All data DEMO."""
 from __future__ import annotations
 
+from importlib.metadata import PackageNotFoundError
+from importlib.metadata import version as _pkg_version
 from typing import Annotated, Optional
 
 from fastmcp import FastMCP
@@ -9,7 +11,13 @@ from pydantic import Field
 # Annotations tell clients which tools are safe to auto-approve (read-only, no side effects).
 READ_ONLY = {"readOnlyHint": True, "idempotentHint": True, "openWorldHint": False}
 
-mcp = FastMCP(name="afya-ya-akili-mcp", instructions="Kenya mental health resources, hand-compiled and partly unverified (read each answer's source). Not a substitute for emergency or clinical care. If life is at risk call 999 or 112. Befrienders Kenya: +254 722 178 177 (call, SMS or WhatsApp; Mon-Fri 9am-5pm). Kenya Red Cross: 1199.")
+try:
+    _VERSION = _pkg_version("afya-ya-akili-mcp")
+except PackageNotFoundError:  # a source tree that was never installed
+    _VERSION = "0+unknown"
+
+
+mcp = FastMCP(name="afya-ya-akili-mcp", instructions="Kenya mental health resources, hand-compiled and partly unverified (read each answer's source). Not a substitute for emergency or clinical care. If life is at risk call 999 or 112. Befrienders Kenya: +254 722 178 177 (call, SMS or WhatsApp; Mon-Fri 9am-5pm). Kenya Red Cross: 1199.", version=_VERSION)
 
 @mcp.tool(name="mental_health_provider_finder", description="Find sample mental health providers and services in Kenya by county and facility type, with a guide to what each kind of professional does (psychiatrist, psychologist, counsellor, psychotherapist). Use when someone asks where to get professional help. county filters by matching text; an unmatched county returns an empty list with a note. provider_type filters by FACILITY type (public_hospital, private_clinic, private_hospital, crisis_support or training_clinic); the professional titles in the guide are explanations, not filter values. If provider_type matches nothing, ALL providers are returned and provider_type_matched is false. Returns the source label, the resources with type, county, note and contact, the guide, KPA and KCA pointers and an SHA note. A short hand-compiled sample: phone numbers other than Befrienders Kenya's are NOT verified, so confirm before use. For someone in crisis use crisis_line_directory first. Read-only; no side effects.", annotations=READ_ONLY)
 def mental_health_provider_finder(county: Annotated[str | None, Field(description="Optional county such as Nairobi; matched by text.")] = None, provider_type: Annotated[str | None, Field(description="Optional facility type: public_hospital, private_clinic, private_hospital, crisis_support or training_clinic. Professional titles such as psychiatrist do not match.")] = None) -> dict:
