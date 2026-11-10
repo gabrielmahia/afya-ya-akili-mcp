@@ -3,7 +3,7 @@ message: "If you use this software, please cite it as below."
 type: software
 title: "afya-ya-akili-mcp"
 abstract: "Kenya mental health resources: provider finder, crisis lines from sourced listings, rights, workplace wellness, self-help"
-version: "0.1.12"
+version: "0.1.13"
 authors:
   - family-names: "Mahia"
     given-names: "Gabriel"
